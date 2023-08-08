@@ -66,7 +66,7 @@ for image_file in os.listdir(images_folder):
                 bounding_boxes = []
             break
         
-        # Exit
+        # Exit  
         elif key == 27:  # Esc key
             for box in bounding_boxes:
                 print(f"Box {box[2]}: Detected Text: {pytesseract.image_to_string(image[box[0][1]:box[1][1], box[0][0]:box[1][0]])}")
